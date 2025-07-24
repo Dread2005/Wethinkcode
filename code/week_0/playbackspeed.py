@@ -1,0 +1,5 @@
+play = input("slow down: ")
+slow_down_seq = play.split()
+print(slow_down_seq)
+slow_down = "...".join(slow_down_seq)
+print(slow_down)
