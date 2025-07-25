@@ -1,5 +1,5 @@
 def main():
-    time = input('What time is it?  ').lower()
+    time = input('What time is it?\nDo not leave any spaces when typing:  ').lower()
     time_lst = convert(time)
     #print((time_lst[0]))
 
