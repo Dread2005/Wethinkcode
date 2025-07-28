@@ -38,7 +38,7 @@ def snake_cas():
     for n in snake:
         if n.isupper():
             snake[snake.index(n)] = '_'+n.lower()
-    snake_ = ' '.join(snake)
+    snake_ = ''.join(snake)
 
 camel_cas()
 snake_cas()
