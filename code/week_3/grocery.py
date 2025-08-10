@@ -4,7 +4,7 @@ lst__amount = []
 
 
 def grocery():
-    lst = input()
+    lst = input().capitalize()
     groc_lst.append(lst)
 
 while '$' not in groc_lst:
@@ -12,10 +12,10 @@ while '$' not in groc_lst:
     #print(grocery_lst)
 
 for n in groc_lst:
-    if n not in lst__amount:
-        lst__amount.append(f'{groc_lst.count(n)} {n}')
+    #if n not in lst__amount:
+    lst__amount.append(f'{groc_lst.count(n)} {n}')
     
-#del lst__amount[-1] 
+del (lst__amount[-1] )
 
 for n in lst__amount:
-    print(n)   
+    print(f'\n\n\n\n\n{n}') 
