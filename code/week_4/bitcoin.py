@@ -17,7 +17,8 @@ def val_func():
         print('Not A Float')
         return val_func()
 
-val = val_func()
+if __name__ == '__main__':
+    val = val_func()
 try:
     parameters = {
         'id': 'bitcoin',
