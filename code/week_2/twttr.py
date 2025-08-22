@@ -1,13 +1,20 @@
-vowls = ['a','e','i', 'o','u']
-update_tweet = None
-tweet = input('Input: ').lower()
+def main():
+    print(twtr())
 
-splt_tweet = list(tweet)
-#print(splt_tweet)
+def twtr():
+    vowls = ['a','e','i', 'o','u']
+    update_tweet = None
+    tweet = input('Input: ').lower()
 
-for i in splt_tweet:
-    if i in vowls:
-        splt_tweet.remove(i)
+    splt_tweet = list(tweet)
+    #print(splt_tweet)
 
-update_tweet = ''.join(splt_tweet)
-print(update_tweet)
+    for i in splt_tweet:
+        if i in vowls:
+            splt_tweet.remove(i)
+
+    update_tweet = ''.join(splt_tweet)
+    return update_tweet
+
+if __name__ == '__main__':
+    main()
